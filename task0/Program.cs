@@ -107,13 +107,13 @@
 // 4 -> "-4, -3, -2, -1, 0, 1, 2, 3, 4"
 // 2 -> " -2, -1, 0, 1, 2"
 
-Console.Write("Ведите число: ");
-int N =int.Parse(Console.ReadLine()!);
+// Console.Write("Ведите число: ");
+// int N =int.Parse(Console.ReadLine()!);
 
-for (int i = -N; i <= N; i++)
-{
-    Console.Write(i + ", ");
-}
+// for (int i = -N; i <= N; i++)
+// {
+//     Console.Write(i + ", ");
+// }
 
 /*********************************************************************/
 
@@ -122,12 +122,12 @@ for (int i = -N; i <= N; i++)
 // 782 -> 2
 // 918 -> 8
 
-// Console.Write("Ведите трёхзначное число: ");
-// int N =int.Parse(Console.ReadLine()!);
-// if (N > 99 && N < 1000)
-// {
-//     N = N % 10;
-//     Console.Write("Крайнее число: " + N);
-// }
+Console.Write("Ведите трёхзначное число: ");
+int N =int.Parse(Console.ReadLine()!);
+if (N > 99 && N < 1000)
+{
+    N = N % 10;
+    Console.Write("Крайнее число: " + N);
+}
 
 /*********************************************************************/
