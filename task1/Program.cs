@@ -5,9 +5,9 @@
 // a = -3 b = 9 -> нет
 
 Console.Write("Введите число 1: ");
-int a =int.Parse(Console.ReadLine()!);
+int a = int.Parse(Console.ReadLine()!);
 Console.Write("Введите число 2: ");
-int b =int.Parse(Console.ReadLine()!);
+int b = int.Parse(Console.ReadLine()!);
 int sqr = b * b;
 if (sqr == a)
 {
