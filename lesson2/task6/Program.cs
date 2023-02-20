@@ -5,3 +5,8 @@
 // 456 -> 5
 // 782 -> 8
 // 918 -> 1
+
+Console.Write("Введите трёхзначное число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write(a);
+Console.Write(" -> " + a % 100 /10);

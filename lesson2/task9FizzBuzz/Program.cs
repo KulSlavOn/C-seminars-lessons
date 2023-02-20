@@ -3,3 +3,25 @@
 // слово «Fizz», а вместо чисел, кратных пяти — слово «Buzz».
 // Если число кратно и 3, и 5, то программа должна выводить
 // слово «FizzBuzz».(доп задача по желанию, разберем на семинаре)
+
+int n = 0;
+while (n < 100)
+{
+    n++;
+    if (n % 3 == 0 && n % 5 == 0)
+    {
+        Console.Write("FizzBuzz ");
+    }
+    else if (n % 3 == 0)
+    {
+        Console.Write("Fizz ");
+    }
+    else if (n % 5 == 0)
+    {
+        Console.Write("Buzz ");
+    }
+    else
+    {
+        Console.Write(n + " ");
+    }
+}

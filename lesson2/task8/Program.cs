@@ -5,3 +5,19 @@
 // 6 -> да
 // 7 -> да
 // 1 -> нет
+
+Console.Write("Введите число: ");
+int d = Convert.ToInt32(Console.ReadLine());
+Console.Write(d);
+if (d > 5 && d < 8)
+{
+    Console.Write(" -> выходной день");
+}
+if (d > 7 || d < 1)
+{
+    Console.Write(" -> в неделе 7 дней");
+}
+if (d < 6 && d > 0)
+{
+    Console.Write(" -> будний день");
+}

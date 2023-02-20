@@ -6,3 +6,19 @@
 // 78 -> третьей цифры нет
 
 // 32679 -> 6
+
+Console.Write("Введите число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write(a);
+if (a < 100)
+{
+    Console.Write(" -> нет третьей цифры");
+}
+if (a > 99 && a < 999)
+{
+    Console.Write(" -> " + a % 10);
+}
+if (a > 9999)
+{
+    Console.Write(" -> " + a / 100 % 10);
+}
