@@ -13,11 +13,18 @@ int b2 = n / 10 % 10;
 // int b=b1+b2;
 // Console.WriteLine(a + " " + b1 + " " + b2);
 // Console.WriteLine(b);
-if (a == b1 + b2)
+if (n <= 100000 && n >= 10000)
 {
-    Console.Write("Да");
+    if (a == b1 + b2)
+    {
+        Console.Write("Да");
+    }
+    else
+    {
+        Console.Write("Нет");
+    }
 }
 else
 {
-    Console.Write("Нет");
+    Console.WriteLine("Число не пятизначное");
 }
