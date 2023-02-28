@@ -5,27 +5,20 @@
 
 // 2, 4 -> 16
 
-void FillArray(int[] array)
+int RaisNumNatPow(int a, int b)
 {
-    int length = array.Length;
-    for (int i = 0; i < length; i++)
+    int sum = a;
+    while (b > 1)
     {
-        array[i] = new Random().Next(0, 2);
-        // Console.Write(array[i]+" ");
+        sum = sum * a;
+        b--;
     }
+    return sum;
 }
 
-void PrintArray(int[] mas)
-{
-    int len = mas.Length;
-    for (int i = 0; i < len; i++)
-    {
-        Console.Write(mas[i] + " ");
-    }
-}
-
-int[] arr = new int[8];
 Console.Clear();
-FillArray(arr);
-// Console.WriteLine();
-PrintArray(arr);
+Console.Write("Введите число: ");
+int num = int.Parse(Console.ReadLine()!);
+Console.Write("Введите степень возведения: ");
+int pow = int.Parse(Console.ReadLine()!);
+Console.WriteLine($"{num} в {pow}-й степени = {RaisNumNatPow(num, pow)}");
