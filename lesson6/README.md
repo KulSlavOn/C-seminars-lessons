@@ -1,4 +1,4 @@
-# [LESSON5](https://github.com/KulSlavOn/C-seminars-lessons/tree/main/lesson6)
+# [LESSON6](https://github.com/KulSlavOn/C-seminars-lessons/tree/main/lesson6)
 
 ## Задачи пройденные на семинаре
 
