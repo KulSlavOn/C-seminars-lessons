@@ -73,6 +73,37 @@ int[,] GenerateArray(int m, int n, int min, int max)
 }
 
 
+static int[,] MultiplyMatrices(int[,] matrix1, int[,] matrix2)
+{
+    int rows1 = matrix1.GetLength(0);
+    int cols1 = matrix1.GetLength(1);
+    int rows2 = matrix2.GetLength(0);
+    int cols2 = matrix2.GetLength(1);
+
+    if (cols1 != rows2)
+        Console.Write("Невозможно умножить матрицы: количество столбцов первой матрицы не равно количеству строк второй матрицы."!);
+
+    int[,] result = new int[rows1, cols2];
+
+    for (int i = 0; i < rows1; i++)
+    {
+        for (int j = 0; j < cols2; j++)
+        {
+            int sum = 0;
+
+            for (int k = 0; k < cols1; k++)
+            {
+                sum += matrix1[i, k] * matrix2[k, j];
+            }
+
+            result[i, j] = sum;
+        }
+    }
+
+    return result;
+}
+
+
 void Task58()
 {
     int m = NumberRows();
@@ -83,12 +114,12 @@ void Task58()
 
     int[,] matrix1 = GenerateArray(m, n, min, max);
     int[,] matrix2 = GenerateArray(m, n, min, max);
-
+    int[,] result = MultiplyMatrices(matrix1, matrix2);
     Console.Write("I");
     PrintArray(matrix1);
     Console.Write("II");
     PrintArray(matrix2);
-
+    PrintArray(result);
 }
 
 Task58();
