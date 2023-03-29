@@ -13,3 +13,5 @@
 ## [LESSON7](https://github.com/KulSlavOn/C-seminars-lessons/tree/main/lesson7)
 
 ## [LESSON8](https://github.com/KulSlavOn/C-seminars-lessons/tree/main/lesson8)
+
+## [LESSON9](https://github.com/KulSlavOn/C-seminars-lessons/tree/main/lesson9)
